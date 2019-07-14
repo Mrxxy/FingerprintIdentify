@@ -21,16 +21,16 @@ import android.content.Context;
 import android.hardware.fingerprint.FingerprintManager;
 import android.os.CancellationSignal;
 import android.os.Handler;
+import android.support.annotation.RequiresApi;
+import android.support.annotation.RestrictTo;
 
 import java.security.Signature;
 
 import javax.crypto.Cipher;
 import javax.crypto.Mac;
 
-import androidx.annotation.RequiresApi;
-import androidx.annotation.RestrictTo;
+import static android.support.annotation.RestrictTo.Scope.LIBRARY_GROUP;
 
-import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
 
 @RequiresApi(23)
 @TargetApi(23)
